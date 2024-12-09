@@ -12,7 +12,6 @@ import { useState } from "react";
 
 export default function SideBar() {
   const [activeCategory, setActiveCategory] = useState("Home");
-
   const handleCategoryClick = (category: string) => {
     setActiveCategory(category);
   };

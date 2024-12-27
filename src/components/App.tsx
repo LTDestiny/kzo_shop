@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./assets/App.css";
 import SideBar from "./SideBar";
 import Information from "./Information";
 import Center from "./Center";
+import ListItem from "./ListItem";
+
 const App: React.FC = () => {
+  const [activeCategory, setActiveCategory] = useState("Home");
+
   return (
     <div className="container">
-      <SideBar />
+      <SideBar
+        activeCategory={activeCategory}
+        onCategoryChange={setActiveCategory}
+      />
       <Information />
-      <Center />
+      {activeCategory === "Home" && <Center />}
+      <ListItem />
     </div>
   );
 };

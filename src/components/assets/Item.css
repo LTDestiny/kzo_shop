@@ -1,0 +1,25 @@
+.item {
+    position: relative;
+    width: 13.3125rem;
+    height: 13.875rem;
+    background-color: linear-gradient(180deg, rgba(52, 0, 104, 0.40) 0%, rgba(195, 119, 255, 0.50) 100%);
+}
+
+.item__img {
+    width: 6.25rem;
+    height: 6.25rem;
+    background: url();
+    position: absolute;
+    left: 3.34rem;
+    top: 1.25rem;
+}
+
+.item__text {
+    position: absolute;
+    left: 5.84rem;
+    top: 8.81rem;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+}
